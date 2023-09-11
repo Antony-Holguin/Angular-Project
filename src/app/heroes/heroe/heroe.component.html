@@ -1,0 +1,21 @@
+<dl>
+    <dt>Nombre:</dt>
+    <dd>{{nombre}}</dd>
+
+    <dt>Edad:</dt>
+    <dd>{{edad}}</dd>
+
+    <div>
+        {{obtenerNombre()}}
+    </div>
+
+    <div>
+        <h1>Capitalizado</h1>
+        <p>{{nombreCapitalizado}}</p>
+    </div>
+
+    <div>
+        <button (click)="cambiarEdad()">Cambiar edad</button>
+        <button (click)="cambiarNombre()">Cambiar nombre</button>
+    </div>
+</dl>
