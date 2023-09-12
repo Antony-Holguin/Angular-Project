@@ -1,0 +1,16 @@
+<h1>Personajes</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-personajes [personajes]="personajes"></app-personajes><!--Reutilizacion de componente-->
+    </div>
+
+    <div class="col">
+        <h3>Agregar otro hp</h3>
+        <form action="" (ngSubmit)="agregarPersonaje()">
+            <input [(ngModel)]="nuevo.name" type="text" name="name" placeholder="Nombre de personaje">
+            <input type="number" [(ngModel)]="nuevo.powerLevel" name="powerLevel" placeholder="Nivel de poder">
+            <button  type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
